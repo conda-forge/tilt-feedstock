@@ -1,6 +1,4 @@
-{% set version = "0.16.1" %}
-{% set commit = "1f21e296d6a1029223d273bcf43dc6b0bf71c0e8" %}
-{% set date = "2020-07-17" %}
+{% set version = "0.17.0" %}
 
 package:
   name: tilt
@@ -8,10 +6,10 @@ package:
 
 source:
   url: https://github.com/tilt-dev/tilt/archive/v{{ version }}.tar.gz
-  sha256: 4df87f9efaa83e518d45f0ea10b6b3f7839076ab70731e434ce2f45f794770d4
+  sha256: 689a583dd84a53ff52a4e0247c03ed409c9c6abadb7494cf741b20c99be7cbc9
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
