@@ -1,4 +1,4 @@
-{% set version = "0.17.11" %}
+{% set version = "0.17.12" %}
 
 package:
   name: tilt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/tilt-dev/tilt/archive/v{{ version }}.tar.gz
-  sha256: 3f3e4360b018c90c7eb46c31542e25b6a60ff82244d4e84057fb2c295a2e21ee
+  sha256: 7c1239a52bfb6ed7cbe1031e1227dbae22fcfe2811f8f74563dc4944eb8cb301
 
 build:
   number: 0
