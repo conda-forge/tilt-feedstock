@@ -15,6 +15,7 @@ requirements:
   build:
     - {{ compiler('go') }}
     - {{ compiler('cxx') }}
+    - go-licenses
   run_constrained:
     - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
 
