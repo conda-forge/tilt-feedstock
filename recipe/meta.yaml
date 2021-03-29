@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/tilt-dev/tilt/archive/v{{ version }}.tar.gz
-  sha256: a2054085c062fa2d23acd0ba922d3e4d34db2c1b5087836335b8ac813fcd1902
+  sha256: 092fd786cb335bd49b70dcead422c4bad71a00c60b151c7b8ba49ea7947afbe7
 
 build:
   number: 0
