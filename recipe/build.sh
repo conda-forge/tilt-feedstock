@@ -7,6 +7,6 @@ if [[ $(uname) = "Darwin" ]]; then
 fi
 
 DATE=$(date +"%Y-%m-%d")
-go install -tags=osusergo -mod=vendor -ldflags="-s -w -X main.version=$PKG_VERSION -X main.date=$DATE" ./cmd/tilt
+go build -tags=osusergo -mod=vendor -ldflags="-s -w -X main.version=$PKG_VERSION -X main.date=$DATE" -o="$OUTPUT_PATH" ./cmd/tilt
 
 bash $RECIPE_DIR/build_library_licenses.sh

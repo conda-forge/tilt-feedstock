@@ -9,15 +9,15 @@ source:
   sha256: 8b655ee12af88b3edc46534e510924ab1a3690a352773ac868fdbce81a2d0d1f
 
 build:
-  number: 0
+  number: 1
+  script_env:
+    - OUTPUT_PATH={{ target_gobin }}tilt{{ target_goexe }}
 
 requirements:
   build:
     - {{ compiler('go') }}
     - {{ compiler('cxx') }}
     - go-licenses
-  run_constrained:
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
 
 test:
   commands:
