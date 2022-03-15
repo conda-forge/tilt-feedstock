@@ -15,6 +15,7 @@ FOR /F "delims=" %%i IN ('cygpath.exe -u "%STDLIB_DIR%"') DO set "STDLIB_DIR=%%i
 set MSYSTEM=MINGW%ARCH%
 set MSYS2_PATH_TYPE=inherit
 set CHERE_INVOKING=1
+set CGO_LDFLAGS=-static
 
 bash -lc ./build.sh
 
