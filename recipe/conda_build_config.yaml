@@ -2,4 +2,3 @@ MACOSX_DEPLOYMENT_TARGET:  # [osx]
   - 11.3                   # [osx]
 macos_min_version:         # [osx]
   - 11.3                   # [osx]
-  
