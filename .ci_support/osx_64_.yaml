@@ -1,5 +1,9 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '11.3'
+c_compiler:
+- clang
+c_compiler_version:
+- '12'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -20,3 +24,6 @@ target_goexe:
 - ''
 target_platform:
 - osx-64
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
