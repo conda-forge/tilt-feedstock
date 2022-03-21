@@ -17,6 +17,9 @@ set MSYS2_PATH_TYPE=inherit
 set CHERE_INVOKING=1
 set CGO_LDFLAGS=-static
 
+rem see https://github.com/tree-sitter/tree-sitter-python/pull/130
+set CGO_CXXFLAGS=-DUINT8_MAX=255
+
 bash -lc ./build.sh
 
 if %errorlevel% neq 0 exit /b %errorlevel%

@@ -22,7 +22,6 @@ requirements:
     
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('m2w64_cxx') }}      # [win]
-    - libcxx                           # [win]
 
     - go-licenses
     - sysroot_linux-64 2.17  # [linux64]
