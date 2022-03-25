@@ -1,4 +1,4 @@
-{% set version = "0.26.2" %}
+{% set version = "0.26.3" %}
 
 package:
   name: tilt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/tilt-dev/tilt/archive/v{{ version }}.tar.gz
-  sha256: 14e158d232226ee3cb1a46608279232f9d3b9cafbacc8e95c7271f0e01e770d4
+  sha256: f491cf2344b42cdb3163b6aebf8c6d9b3adb1076fc367436e5fc87b6903422d6
 
 build:
   number: 0
@@ -19,7 +19,6 @@ requirements:
 
     - {{ compiler('c') }}        # [unix]
     - {{ compiler('cxx') }}      # [unix]
-    
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('m2w64_cxx') }}      # [win]
 
@@ -28,7 +27,6 @@ requirements:
   run_constrained:
     - {{ pin_compatible(compiler('c')) }}        # [unix]
     - {{ pin_compatible(compiler('cxx')) }}      # [unix]
-    
     - {{ pin_compatible(compiler('m2w64_c')) }}        # [win]
     - {{ pin_compatible(compiler('m2w64_cxx')) }}      # [win]
 
