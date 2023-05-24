@@ -1,11 +1,11 @@
-About tilt
-==========
+About tilt-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tilt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tilt-dev/tilt
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tilt-feedstock/blob/main/LICENSE.txt)
 
 Summary: A multi-service dev environment for teams on Kubernetes
 
