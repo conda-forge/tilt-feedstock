@@ -8,6 +8,8 @@ m2w64_c_compiler:
 - m2w64-toolchain
 m2w64_cxx_compiler:
 - m2w64-toolchain
+nodejs:
+- '18'
 target_gobin:
 - '%PREFIX%\bin\'
 target_goexe:
