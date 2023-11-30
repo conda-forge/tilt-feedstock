@@ -17,7 +17,7 @@ docker_image:
 go_compiler:
 - go-nocgo
 nodejs:
-- '16'
+- '20'
 target_gobin:
 - ${PREFIX}/bin/
 target_goexe:
