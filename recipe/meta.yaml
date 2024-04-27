@@ -1,4 +1,4 @@
-{% set version = "0.33.12" %}
+{% set version = "0.33.13" %}
 
 package:
   name: tilt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/tilt-dev/tilt/archive/v{{ version }}.tar.gz
-  sha256: 4fe1695f77c96cf91864a40c194df11a121a5676f156a52d8bc3cb64a1cec6e7
+  sha256: 7ce1b69a37df3d9a48f246a64dcdbe20a8e630000c4109637c2a63aa7b8475ac
 
 build:
   number: 0
@@ -18,12 +18,13 @@ requirements:
     - {{ compiler('go') }}
 
     - {{ compiler('c') }}        # [unix]
+    - {{ stdlib("c") }}          # [unix]
     - {{ compiler('cxx') }}      # [unix]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("c") }}                # [win]
     - {{ compiler('m2w64_cxx') }}      # [win]
 
     - go-licenses
-    - sysroot_linux-64 2.17  # [linux64]
     - make
     - nodejs
     - yarn <2
