@@ -9,7 +9,7 @@ source:
   sha256: 28d0e369d783033b976f518d3da160922d921de63c3db95dfbe0d5a36eda7e0f
 
 build:
-  number: 0
+  number: 1
   script_env:
     - OUTPUT_PATH={{ target_gobin }}tilt{{ target_goexe }}
 
