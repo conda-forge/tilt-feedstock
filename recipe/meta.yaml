@@ -9,7 +9,7 @@ source:
   sha256: be85fa22b8fc9bdb0cbc16e00ffbbba06bca003dd1001fca96a7780de99c3ebf
 
 build:
-  number: 0
+  number: 1
   script_env:
     - OUTPUT_PATH={{ target_gobin }}tilt{{ target_goexe }}
 
@@ -26,7 +26,7 @@ requirements:
 
     - go-licenses
     - make
-    - nodejs
+    - nodejs 20
     - yarn <2
   run_constrained:
     - {{ pin_compatible(compiler('c')) }}        # [unix]
