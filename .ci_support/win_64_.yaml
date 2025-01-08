@@ -16,8 +16,6 @@ m2w64_cxx_compiler:
 - gxx
 m2w64_cxx_compiler_version:
 - '13'
-nodejs:
-- '20'
 target_gobin:
 - '%PREFIX%\bin\'
 target_goexe:
