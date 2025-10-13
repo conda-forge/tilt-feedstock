@@ -9,7 +9,7 @@ source:
   sha256: bdac22f04e66ebf4cb42dc0cbd7e41ab931d2a460f156ecef21946bf58cd3d7d
 
 build:
-  number: 0
+  number: 1
   script_env:
     - OUTPUT_PATH={{ target_gobin }}tilt{{ target_goexe }}
 
@@ -28,6 +28,8 @@ requirements:
     - make
     - nodejs 20
     - yarn <2
+    # Restrict to go 1.24 for https://github.com/golang/go/issues/75013
+    - go <1.25
   run_constrained:
     - {{ pin_compatible(compiler('c')) }}        # [unix]
     - {{ pin_compatible(compiler('cxx')) }}      # [unix]
