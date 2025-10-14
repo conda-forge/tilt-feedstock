@@ -7,7 +7,7 @@ go_compiler:
 m2w64_c_compiler:
 - gcc
 m2w64_c_compiler_version:
-- '13'
+- '14'
 m2w64_c_stdlib:
 - m2w64-sysroot
 m2w64_c_stdlib_version:
@@ -15,7 +15,7 @@ m2w64_c_stdlib_version:
 m2w64_cxx_compiler:
 - gxx
 m2w64_cxx_compiler_version:
-- '13'
+- '14'
 target_gobin:
 - '%PREFIX%\bin\'
 target_goexe:
