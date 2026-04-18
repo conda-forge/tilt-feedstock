@@ -1,3 +1,5 @@
+c_stdlib_version:          # [osx and x86_64]
+  - 11.0                   # [osx and x86_64]
 # According to
 # https://github.com/golang/go/issues/75013
 # https://github.com/NixOS/nixpkgs/issues/433688
