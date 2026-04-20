@@ -1,7 +1,7 @@
 build_platform:
   osx_arm64: osx_64
 provider:
-  linux_aarch64: None
+  linux_aarch64: default
   linux_ppc64le: None
 conda_build:
   pkg_format: '2'
